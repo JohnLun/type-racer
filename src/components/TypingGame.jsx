@@ -49,7 +49,7 @@ function TypingGame() {
       <div className="text-center p-4 border rounded bg-custom shadow-lg">
         <Timer isTimerActive={isTimerActive} onExpiration={handleTimerExpiration} />
         <h1 className="mb-4">Typing Game</h1>
-        <Paragraph paragraph={paragraph} currentWordIndex={currentWordIndex} />
+        <Paragraph paragraph={paragraph} currentWordIndex={currentWordIndex} userInput={userInput} />
         <Input
           userInput={userInput}
           onUserInputChange={setUserInput}
