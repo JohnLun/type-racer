@@ -46,9 +46,9 @@ function TypingGame() {
 
   return (
     <div className="container-fluid d-flex justify-content-center align-items-center vw-100 vh-100 bg-custom text-white">
-      <div className="text-center p-4 border rounded bg-custom shadow-lg">
+      <div className="text-center p-3 p-md-4 border rounded bg-custom shadow-lg">
         <Timer isTimerActive={isTimerActive} onExpiration={handleTimerExpiration} />
-        <h1 className="mb-4">Typing Game</h1>
+        <h1 className="mb-4 text-center">Typing Game</h1>
         <Paragraph paragraph={paragraph} currentWordIndex={currentWordIndex} userInput={userInput} />
         <Input
           userInput={userInput}
